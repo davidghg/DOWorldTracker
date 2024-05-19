@@ -18,7 +18,9 @@ An overview of which chat colors are used in the plugin.
 
 
 
-## Verwendung
+## Usage
+
+Press the tabulator button to open th tablist. Then you can see which players are in which world.
 
 Execute the command `/coordinates get <username>` to get the position of a player as a chat message. This message contains the coordinates, the world and the player name.
 
