@@ -1,9 +1,7 @@
-
 # Minecraft WorldTracker
 
 
 This Minecraft plugin makes it easy and uncomplicated to see which player is in which Minecraft world in the table list.
-
 
 
 ## Color Reference
@@ -20,7 +18,10 @@ An overview of which chat colors are used in the plugin.
 
 
 
+## Verwendung
+
+Execute the command `/coordinates get <username>` to get the position of a player as a chat message. This message contains the coordinates, the world and the player name.
+
 ## Authors
 
 - [@davidghg](https://www.github.com/davidghg)
-
