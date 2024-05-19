@@ -1,0 +1,11 @@
+name: DOWorldTracker-1.7-SNAPSHOT
+version: 1.7
+main: de.daveos.worldtracker.WorldTracker
+api-version: 1.17
+commands:
+  coordinate:
+    description: Zeigt die Koordinaten und die Welt eines Spielers an.
+    usage: /coordinate get <player>
+    tab-complete:
+      - get
+      - '@players'
