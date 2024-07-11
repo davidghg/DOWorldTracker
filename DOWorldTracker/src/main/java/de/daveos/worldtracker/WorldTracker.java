@@ -86,8 +86,8 @@ public class WorldTracker extends JavaPlugin implements Listener {
         }
 
         String displayName = player.getName() + ChatColor.DARK_GRAY + " | " + color + worldType;
-        player.setDisplayName(displayName); // Update display name for chat
-        player.setPlayerListName(displayName); // Update display name in tab list
+        player.setDisplayName(displayName); 
+        player.setPlayerListName(displayName); 
     }
 
     public String getPlayerCoordinates(Player player) {
