@@ -27,11 +27,11 @@ public class WorldTracker extends JavaPlugin implements Listener {
                 String playerName = args[1];
                 Player targetPlayer = Bukkit.getPlayer(playerName);
 
-                if (targetPlayer != null) {
-                    sender.sendMessage(getPlayerCoordinates(targetPlayer));
-                } else {
-                    sender.sendMessage(ChatColor.RED + "Dieser Spieler konnte nicht gefunden werden.");
-                }
+//                if (targetPlayer != null) {
+//                    sender.sendMessage(getPlayerCoordinates(targetPlayer));
+//                } else {
+//                    sender.sendMessage(ChatColor.RED + "Dieser Spieler konnte nicht gefunden werden.");
+//                }
                 return true;
             }
         }
@@ -90,7 +90,7 @@ public class WorldTracker extends JavaPlugin implements Listener {
         player.setPlayerListName(displayName); 
     }
 
-    public String getPlayerCoordinates(Player player) {
+    /* public String getPlayerCoordinates(Player player) {
         World world = player.getWorld();
         ChatColor color;
         String worldType;
@@ -120,5 +120,5 @@ public class WorldTracker extends JavaPlugin implements Listener {
         return ChatColor.BLUE + player.getName() + "'s Koordinaten: " + ChatColor.WHITE +
                 "X: " + x + ", Y: " + y + ", Z: " + z + " | " + color + worldType;
 
-}
+} */
 }
