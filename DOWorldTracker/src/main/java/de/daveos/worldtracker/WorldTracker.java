@@ -3,8 +3,6 @@ package de.daveos.worldtracker;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.World;
-import org.bukkit.command.Command;
-import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -17,25 +15,8 @@ public class WorldTracker extends JavaPlugin implements Listener {
 
     @Override
     public void onEnable() {
+
         Bukkit.getPluginManager().registerEvents(this, this);
-    }
-
-    @Override
-    public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
-        if (cmd.getName().equalsIgnoreCase("coordinate")) {
-            if (args.length == 2 && args[0].equalsIgnoreCase("get")) {
-                String playerName = args[1];
-                Player targetPlayer = Bukkit.getPlayer(playerName);
-
-//                if (targetPlayer != null) {
-//                    sender.sendMessage(getPlayerCoordinates(targetPlayer));
-//                } else {
-//                    sender.sendMessage(ChatColor.RED + "Dieser Spieler konnte nicht gefunden werden.");
-//                }
-                return true;
-            }
-        }
-        return false;
     }
 
     @EventHandler
@@ -63,62 +44,29 @@ public class WorldTracker extends JavaPlugin implements Listener {
 
     private void updateDisplayName(Player player) {
         World world = player.getWorld();
-        ChatColor color;
+        String color;
         String worldType;
 
         switch (world.getEnvironment()) {
             case NORMAL -> {
-                color = ChatColor.GREEN;
-                worldType = "Overworld";
+                color = "§x§8§9§E§9§3§DO§x§6§9§E§9§5§3v§x§4§9§E§8§6§9e§x§2§9§E§8§7§Fr§x§0§9§E§7§9§5w§x§0§D§E§2§7§8o§x§1§1§D§E§5§Cr§x§1§4§D§9§3§Fl§x§1§8§D§4§2§2d";
+
             }
             case NETHER -> {
-                color = ChatColor.RED;
-                worldType = "Nether";
+                color = "§x§E§C§1§3§1§3N§x§E§7§2§A§0§De§x§E§2§4§2§0§6t§x§D§D§5§9§0§0h§x§E§E§2§D§0§0e§x§F§F§0§0§0§0r";
+
             }
             case THE_END -> {
-                color = ChatColor.LIGHT_PURPLE;
-                worldType = "End";
+                color = "§x§C§3§8§F§D§AT§x§8§C§8§6§C§Dh§x§5§6§7§E§B§Fe§x§1§F§7§5§B§2 §x§3§8§5§8§A§EE§x§5§0§3§B§A§Bn§x§6§9§1§E§A§7d";
             }
             default -> {
-                color = ChatColor.WHITE;
-                worldType = "[" + world.getName() + "]";
+                color = "§x§F§F§F§F§F§FD§x§F§F§F§F§F§Fe§x§F§F§F§F§F§Ff§x§F§F§F§F§F§Fa§x§F§F§F§F§F§Fu§x§F§F§F§F§F§Fl§x§F§F§F§F§F§Ft";
             }
         }
 
-        String displayName = player.getName() + ChatColor.DARK_GRAY + " | " + color + worldType;
+        String displayName = color + ChatColor.DARK_GRAY + " | " + ChatColor.WHITE + player.getName() ;
         player.setDisplayName(displayName); 
         player.setPlayerListName(displayName); 
     }
 
-    /* public String getPlayerCoordinates(Player player) {
-        World world = player.getWorld();
-        ChatColor color;
-        String worldType;
-
-        switch (world.getEnvironment()) {
-            case NORMAL -> {
-                color = ChatColor.GREEN;
-                worldType = "Overworld";
-            }
-            case NETHER -> {
-                color = ChatColor.RED;
-                worldType = "Nether";
-            }
-            case THE_END -> {
-                color = ChatColor.LIGHT_PURPLE;
-                worldType = "End";
-            }
-            default -> {
-                color = ChatColor.WHITE;
-                worldType = "[" + world.getName() + "]";
-            }
-        }
-        int x = player.getLocation().getBlockX();
-        int y = player.getLocation().getBlockY();
-        int z = player.getLocation().getBlockZ();
-
-        return ChatColor.BLUE + player.getName() + "'s Koordinaten: " + ChatColor.WHITE +
-                "X: " + x + ", Y: " + y + ", Z: " + z + " | " + color + worldType;
-
-} */
 }
