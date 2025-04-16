@@ -12,9 +12,9 @@ public class ChatListener implements Listener {
     public void onChat(AsyncPlayerChatEvent event) {
         Player player = event.getPlayer();
         String color = WorldColorUtil.getColorForWorld(player.getWorld());
-        String name = player.getDisplayName();
-        String msg = event.getMessage();
+        String chatMessage = event.getMessage();
 
-        event.setFormat(color + ChatColor.DARK_GRAY + " | " + ChatColor.GRAY + name + ": " + ChatColor.WHITE + msg);
+        event.setFormat(color + ChatColor.DARK_GRAY + " | " + ChatColor.GRAY + player.getDisplayName() + ": " + ChatColor.WHITE + chatMessage);
+
     }
 }

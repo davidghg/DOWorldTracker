@@ -1,5 +1,5 @@
-name: daveosWorldTracker-1.7-pre
-version: 1.7
+name: daveosWorldTracker-1.8-int
+version: 1.8
 main: de.daveos.worldtracker.WorldTracker
 api-version: 1.21
 
