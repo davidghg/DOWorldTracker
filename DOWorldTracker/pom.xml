@@ -4,8 +4,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>de.daveos</groupId>
-    <artifactId>worldtracker</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <artifactId>daveosWorldTracker</artifactId>
+    <version>1.8-BETA</version>
 
     <name>WorldTracker</name>
     <description>Ein Minecraft-Plugin, das anzeigt, in welcher Welt ein Spieler sich befindet.</description>
