@@ -1,0 +1,7 @@
+database:
+  host: "mc-mysql01.mc-host24.de"       # Die Adresse deines Datenbankservers
+  port: "3306"            # Der Port der MySQL-Datenbank
+  name: "s16961_Extras"    # Der Name der Datenbank
+  username: "u16961_87R03OygOE"        # Der Benutzername für die Datenbank
+  password: "xNDyeTro1quxo.oe@r6OvVp+" # Das Passwort für die Datenbank
+

@@ -1,4 +1,16 @@
-name: DOWorldTracker-1.7-SNAPSHOT
+name: daveosWorldTracker-1.7-pre
 version: 1.7
 main: de.daveos.worldtracker.WorldTracker
-api-version: 1.17
+api-version: 1.21
+
+commands:
+  worldtracker:
+    description: Neuladen der daveosWorldTracker Configuration
+    usage: /worldtracker reload
+    alias: /wtr
+    permission: worldtracker.reload
+
+permissions:
+  worldtracker.reload:
+    description: Erlaubt, die Konfiguration von WorldTracker neuzuladen.
+    default: op
