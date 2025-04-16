@@ -5,10 +5,10 @@
 
     <groupId>de.daveos</groupId>
     <artifactId>daveosWorldTracker</artifactId>
-    <version>1.8-BETA</version>
+    <version>v1.5-PROD</version>
 
     <name>WorldTracker</name>
-    <description>Ein Minecraft-Plugin, das anzeigt, in welcher Welt ein Spieler sich befindet.</description>
+    <description>Ein Minecraft-Plugin, das anzeigt, in welcher Welt ein Spieler sich befindet und die Tode in der Tabliste anzeigt.</description>
     <url>http://maven.apache.org</url>
 
     <properties>

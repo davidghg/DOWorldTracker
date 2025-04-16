@@ -1,9 +1,9 @@
 database:
-  host: "mc-mysql01.mc-host24.de"       # Die Adresse deines Datenbankservers
-  port: "3306"            # Der Port der MySQL-Datenbank
-  name: "s16961_Extras"    # Der Name der Datenbank
-  username: "u16961_87R03OygOE"        # Der Benutzername für die Datenbank
-  password: "xNDyeTro1quxo.oe@r6OvVp+" # Das Passwort für die Datenbank
+  host: ""       # Die Adresse deines Datenbankservers
+  port: ""            # Der Port der MySQL-Datenbank
+  name: ""    # Der Name der Datenbank
+  username: ""        # Der Benutzername für die Datenbank
+  password: "" # Das Passwort für die Datenbank
 
 worldColors:
   normal: "§x§8§9§E§9§3§DO§x§6§9§E§9§5§3v§x§4§9§E§8§6§9e§x§2§9§E§8§7§Fr§x§0§9§E§7§9§5w§x§0§D§E§2§7§8o§x§1§1§D§E§5§Cr§x§1§4§D§9§3§Fl§x§1§8§D§4§2§2d"
